@@ -143,7 +143,7 @@ With Manage Downtimes we can mute a monitor and prevent notifications to be sent
 
 Logging the important parts of your system’s operations is crucial for maintaining infrastructure health. The logs tell us **why** something is behaving this way.
 
-We talked about the collection phase in the [collect information](#-collect-information) section, but we can also configure the collection of logs through the configuration page in the logs module.
+We talked about the collection phase in the [collect information](#collect-information) section, but we can also configure the collection of logs through the configuration page in the logs module.
 
 In the logs page we have four different elements:
 
