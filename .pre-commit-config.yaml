@@ -1,0 +1,9 @@
+repos:
+- repo: local
+  hooks:
+  - id: kubelinter
+    name: KubeLinter System
+    description: This hook runs the KubeLinter utility that exists already on the system to lint Helm charts and Kubernetes YAML files.
+    entry: kube-linter lint .
+    language: system
+    types: [yaml]

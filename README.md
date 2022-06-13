@@ -162,3 +162,4 @@ With the logs configuration panel we can define pipelines, how we ingest our log
 
 > There's a dashboard called Log Managment that have all complete information about logs in our system
 
+test
