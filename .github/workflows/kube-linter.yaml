@@ -18,7 +18,7 @@ jobs:
         id: kube-linter-action-scan
         with:
           # Adjust this directory to the location where your kubernetes resources and helm charts are located.
-          directory: yaml
+          directory: apache
           format: sarif
           output-file: kube-linter.sarif
 
