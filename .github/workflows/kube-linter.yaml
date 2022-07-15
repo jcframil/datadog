@@ -35,8 +35,14 @@ jobs:
         # This allows the following upload-sarif action to still upload the results to your GitHub repo. 
         continue-on-error: true
 
-      - name: Upload SARIF report files to GitHub
-        uses: github/codeql-action/upload-sarif@v1
+      - name: Upload SARIF file
+        uses: github/codeql-action/upload-sarif@v2
+        with:
+          # Path to SARIF file relative to the root of the repository
+          sarif_file: ../results/kube-linter.sarif
+          # Optional category for the results
+          # Used to differentiate multiple results for one commit
+          category: my-analysis-tool
 
       # Ensure the workflow eventually fails if files did not pass kube-linter checks.
       - name: Verify kube-linter-action succeeded
