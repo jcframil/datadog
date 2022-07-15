@@ -40,7 +40,7 @@ jobs:
         with:
           sarif_file: ../results/kube-linter.sarif
 
-      # Ensure  the workflow eventually fails if files did not pass kube-linter checks.
+      # Ensure the workflow eventually fails if files did not pass kube-linter checks.
       - name: Verify kube-linter-action succeeded
         shell: bash
         run: |
