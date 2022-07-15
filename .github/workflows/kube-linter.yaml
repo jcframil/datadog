@@ -23,7 +23,7 @@ jobs:
         id: kube-linter-action-scan
         with:
           # Adjust this directory to the location where your kubernetes resources and helm charts are located.
-          directory: apache
+          directory: yaml
 
         # The following line prevents aborting the workflow immediately in case your files fail kube-linter checks.
         # This allows the following upload-sarif action to still  upload the results to your GitHub repo.
