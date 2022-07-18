@@ -28,9 +28,6 @@ jobs:
       - name: Verify kube-linter-action succeeded
         shell: bash
         run: |
-          ls
-          cat kube-linter.sarif
-          echo "Hello"
           echo "If this step fails, kube-linter found issues. Check the output of the scan step above."
           [[ "${{ steps.kube-linter-action-scan.outcome }}" == "success" ]]
           
